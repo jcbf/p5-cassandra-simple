@@ -9046,8 +9046,8 @@ sub truncate{
 sub get_multi_slice{
   my ($self, $request) = @_;
 
-  my $request = ($request->{'request'}) ? $request->{'request'} : undef;
-  return $self->{impl}->get_multi_slice($request);
+  my $req = ($request->{'request'}) ? $request->{'request'} : undef;
+  return $self->{impl}->get_multi_slice($req);
 }
 
 sub describe_schema_versions{
