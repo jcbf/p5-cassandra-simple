@@ -1,11 +1,10 @@
- [![No Maintenance Intended](http://unmaintained.tech/badge.svg)](http://unmaintained.tech/)
- Be cautious about using it in production!
+Updated to work with Cassandra 3.11.4
 
 NAME
     Cassandra::Simple
 
 VERSION
-    version 0.2
+    version 0.3
 
 DESCRIPTION
     Easy to use, Perl oriented client interface to Apache Cassandra.
