@@ -43,7 +43,7 @@ sub new {
 		my $auth = Cassandra::AuthenticationRequest->new;
 		$auth->{credentials} = {};
 		$auth->{credentials}->{username} = $opt->{username} if $opt->{username};
-		$auth->{credentials}->{username} = $opt->{password} if $opt->{password};
+		$auth->{credentials}->{password} = $opt->{password} if $opt->{password};
 
 		$self->{client}->set_keyspace( $opt->{keyspace} ) if $opt->{keyspace};
 		$self->{client}->login($auth);
